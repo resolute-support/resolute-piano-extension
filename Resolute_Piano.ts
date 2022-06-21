@@ -1,16 +1,3 @@
-/*****************************************************************************
-* | File      	:	cokoinoTouchPiano
-* | Author      :   cokoino team
-* | Function    :	Contorl Piano  
-* | Info        :
-*----------------
-* |	This version:   V1.0
-* | Date        :   2019-04-19
-* | Info        :   Improve misidentification
-*
-* | Basic       :   2018-01-22
-* | Info        :   Basic version
-******************************************************************************/
 /**
  * The piano key corresponds to the touch screen TPvalue.
  */
@@ -74,7 +61,7 @@ enum RGB_COLOR {
 //% weight=20 color=#3333FF icon="\uf001"
 namespace Resolute_Piano {
     //% blockId=tp_press 
-    //% block="Pey|%index|is pressed"
+    //% block="Key|%index|is pressed"
     //% weight=100
     export function TP_Press(index: TP_PIANO): boolean {
         let TPval = pins.i2cReadNumber(0x57, NumberFormat.UInt16BE);
@@ -156,7 +143,6 @@ namespace Resolute_Piano {
         strip.setPixelColor(3, LED4);
         strip.show();
     }
-
 
     /**
      * Plays a tone through pin ``P0`` for the given duration.
