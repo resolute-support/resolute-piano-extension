@@ -1,6 +1,3 @@
-
-> Open this page at [https://resolute-support.github.io/resolute-piano-extension/](https://resolute-support.github.io/resolute-piano-extension/)
-
 ## Use as Extension
 
 This repository can be added as an **extension** in MakeCode.
